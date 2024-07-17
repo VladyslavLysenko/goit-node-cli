@@ -1,7 +1,6 @@
-// fs.readFile("./ ")
 const { program } = require('commander');
-
 const contacts = require('./db');
+
 const invokeAction = async ({ action, id, name, email, phone }) => {
   switch (action) {
     case 'get':
